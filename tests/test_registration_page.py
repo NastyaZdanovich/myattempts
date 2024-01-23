@@ -18,8 +18,8 @@ class TestRegistration:
             sign_in_page.fill_in_a_form(sign_in_page.confirm_password_xpath, Info.PASSWORD)
             sign_in_page.click_by_xpath(sign_in_page.enter)
 
-        # with allure.step("4. Проверить, что вход в кабинет произошел "):
-        #
-        #     main_page.switch_handler(0)
-        #     text = main_page.get_a_text(main_page.my_oz_xpath)
-        #     assert text == 'Мой OZ', f"Expected text 'Мой OZ', actual text {text}"
+        with allure.step("4. Проверить, что вход в кабинет произошел "):
+
+            main_page.switch_handler(0)
+            text = main_page.get_a_text(main_page.my_oz_xpath)
+            assert text == 'Мой OZ', f"Expected text 'Мой OZ', actual text {text}"

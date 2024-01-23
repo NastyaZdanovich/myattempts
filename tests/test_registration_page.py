@@ -12,9 +12,9 @@ class TestRegistration:
             sign_in_page = SignInPage(driver)
             sign_in_page.click_by_xpath(sign_in_page.email_registration)
 
-        # with allure.step("3.Заполнить поля 'Электронная почта' и 'Пароль'"):
-        #     sign_in_page.switch_handler(-1)
-        #     sign_in_page.fill_in_a_form(sign_in_page.confirm_email_xpath, Info.EMAIL)
+        with allure.step("3.Заполнить поля 'Электронная почта' и 'Пароль'"):
+            sign_in_page.switch_handler(-1)
+            sign_in_page.fill_in_a_form(sign_in_page.confirm_email_xpath, Info.EMAIL)
         #     sign_in_page.fill_in_a_form(sign_in_page.confirm_password_xpath, Info.PASSWORD)
         #     sign_in_page.click_by_xpath(sign_in_page.enter)
         #

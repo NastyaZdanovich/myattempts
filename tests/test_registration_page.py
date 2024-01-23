@@ -21,4 +21,7 @@ class TestRegistration:
         with allure.step("4. Проверить, что вход в кабинет произошел "):
 
             main_page.switch_handler(0)
-            main_page.choose_a_category()
+            main_page.refresh_page()
+            text = main_page.get_a_text(main_page.my_oz_xpath)
+            assert text == 'Мой OZ', f"Expected text 'Мой OZ', actual text {text}"
+

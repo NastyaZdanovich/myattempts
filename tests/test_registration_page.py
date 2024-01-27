@@ -24,6 +24,5 @@ class TestRegistration:
 
             main_page.switch_handler(0)
             main_page.refresh_page()
-            time.sleep(3)
             main_page.choose_a_category()
 
